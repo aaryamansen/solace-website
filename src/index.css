@@ -1,0 +1,88 @@
+/* Global reset + layout utilities used by the Solace landing page.
+   Per-section styling lives inline in the components under src/components.
+   Fonts (Inter, Caveat, Space Mono) are loaded via a <link> in index.html. */
+
+html,
+body {
+  margin: 0;
+  background: #efe6d0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Keyframes and helper classes referenced by the landing components. */
+@keyframes wave {
+  0%,
+  100% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+}
+
+.lift {
+  transition: transform 0.18s ease;
+}
+.lift:hover {
+  transform: translateY(-3px);
+}
+
+.navlink {
+  color: #8a7f69;
+  font: 600 13px/1 Inter;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.navlink:hover {
+  color: #3a3327;
+}
+
+/* Layout utility classes referenced by the landing markup. */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-stretch {
+  align-items: stretch;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.grid {
+  display: grid;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-1\.5 {
+  gap: 0.375rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
